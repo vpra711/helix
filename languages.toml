@@ -5,6 +5,59 @@ auto-format = true
 comment-token = "//"
 indent = { tab-width = 4, unit = "    " }
 
+[[language]]
+name = "c++"
+file-types = ["cc", "hh", "cpp", "hpp", "ipp", "tpp", "cxx", "hxx", "ixx", "txx", "ino"]
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "c-sharp"
+file-types = ["cs"]
+roots = ["sln", "csproj"]
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "rust"
+file-types = ["rust"]
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "go"
+file-types = ["go"]
+roots = ["Gopkg.toml", "go.mod"]
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "python"
+injection-regex = "python"
+file-types = ["py"]
+shebangs = ["python"]
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "bash"
+injection-regex = "(shell|bash|zsh|sh)"
+file-types = ["sh", "bash", "zsh", ".bash_login", ".bash_logout", ".bash_profile", ".bashrc", ".profile", ".zshenv", ".zlogin", ".zlogout", ".zprofile", ".zshrc", "APKBUILD", "PKGBUILD", "eclass", "ebuild", "bazelrc"]
+shebangs = ["sh", "bash", "dash"]
+comment-token = "#"
+language-server = { command = "bash-language-server", args = ["start"] }
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "powershell"
+file-types = ["ps1"]
+auto-format = true
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
+
 [language.auto-pairs]
 '(' = ')'
 '{' = '}'
