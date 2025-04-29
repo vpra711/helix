@@ -1,5 +1,6 @@
 # helix has rust configuartion by default.
 # duplicate error will be thrown.
+# source field is must.
 
 [[language]]
 name = "c"
@@ -40,6 +41,14 @@ injection-regex = "python"
 file-types = ["py"]
 scope = "source.py"
 shebangs = ["python"]
+comment-token = "#"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "bash"
+injection-regex = "(shell|bash|zsh|sh)"
+file-types = ["sh", "bash", "zsh", ".bash_login", ".bash_logout", ".bash_profile", ".bashrc", ".profile", ".zshenv", ".zlogin", ".zlogout", ".zprofile", ".zshrc", "APKBUILD", "PKGBUILD", "eclass", "ebuild", "bazelrc"]
+shebangs = ["sh", "bash", "dash"]
 comment-token = "#"
 indent = { tab-width = 4, unit = "    " }
 
