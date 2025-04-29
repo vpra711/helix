@@ -1,0 +1,14 @@
+[[language]]
+name = "c"
+file-types = ["c", "h"]
+auto-format = true
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'

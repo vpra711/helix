@@ -1,0 +1,24 @@
+theme = "carbonfox"
+
+[editor]
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 500
+
+[editor.whitespace]
+render = "all"
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[editor.statusline]
+left = ["mode", "spinner", "version-control"]
+center = ["file-name"]
+right = ["diagnostics", "file-line-ending", "file-encoding", "position"]
+separator = "│"
+
