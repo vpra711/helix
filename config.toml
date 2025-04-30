@@ -22,3 +22,15 @@ center = ["file-name"]
 right = ["diagnostics", "file-line-ending", "file-encoding", "position"]
 separator = "│"
 
+
+# another workaround for auto-save on escape
+# not required. but in-case the autosave fails
+
+[keys.normal]
+"esc" = ["collapse_selection", ":w"]
+
+[keys.select]
+"esc" = ["collapse_selection", "normal_mode", ":w"]
+
+[keys.insert]
+"esc" = ["normal_mode", ":w"]
