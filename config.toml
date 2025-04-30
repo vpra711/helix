@@ -6,6 +6,7 @@ gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
 [editor.auto-save]
 after-delay.enable = true
 after-delay.timeout = 500
+focus-last = true
 
 [editor.whitespace]
 render = "all"
